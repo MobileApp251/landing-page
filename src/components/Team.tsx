@@ -14,7 +14,7 @@ const links = [
 
 export default function Team() {
     return (
-        <section className="team-section">
+        <section className="team-section" data-aos="fade-up">
             <h2 className="title">Meet the Team</h2>
 
             <div className="team-grid">
