@@ -5,9 +5,22 @@ import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
+const listOfScreen = [
+    '/screen/Onboarding-1.png',
+    '/screen/Onboarding-2.png',
+    '/screen/Onboarding-3.png',
+    '/screen/Onboarding-4.png',
+    '/screen/LoginScreen.png',
+    '/screen/Dashboard.png',
+    '/screen/MyTask.png',
+    '/screen/ProjectDetail.png',
+    '/screen/TaskDetail.png',
+    '/screen/Notifications.png',
+]
+
 export default function Screen() {
     return (
-        <div className="screen">
+        <div className="screen" data-aos="fade-up">
             <h1 className='title'>Design Screens</h1>
             <Swiper
                 effect={'cards'}
@@ -15,16 +28,18 @@ export default function Screen() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                {listOfScreen.map((screen, index) => (
+                    <SwiperSlide key={index}>
+                        <img className='screenshot' src={screen} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
+            <div className='flex items-center'>
+                Designed with <span>
+                    <a href='https://www.figma.com/design/tmIHtM4PJhKNQHWMUJYRC9/CloneJira?node-id=0-1&t=WDmMmYDpDHRsputP-1' target="_blank" rel="noreferrer">
+                        <img className='figma ml-2' src="/tech/figma-logo.svg" alt="Figma" />
+                    </a></span>
+            </div>
         </div>
     )
 }

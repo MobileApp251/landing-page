@@ -2,6 +2,8 @@ import WellcomeSection from './components/WellcomeSection';
 import ProjectOverview from './components/ProjectOverview';
 import Features from './components/Features';
 import Screen from './components/Screen';
+import Technology from './components/Technology';
+import Team from './components/Team';
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
       <ProjectOverview></ProjectOverview>
       <Features></Features>
       <Screen></Screen>
+      <Technology></Technology>
+      <Team></Team>
     </div>
   )
 }
