@@ -2,8 +2,7 @@ import '../styles/technology.scss';
 
 const listOfTechLogo = [
     '/tech/react-logo.svg',
-    '/tech/php-logo.svg',
-    '/tech/express-logo.svg',
+    '/tech/spring-logo.svg',
     '/tech/mysql-logo.png',
     '/tech/railway-logo.svg'
 ]
@@ -21,7 +20,10 @@ export default function Technology() {
                         <div className="carousel-slide" key={index}>
                             <img src={slide} alt={slide} />
                             {slide === '/tech/react-logo.svg' ? (
-                                <span className='ml-3 text-neutral-800 font-semibold'>React Native</span>
+                                <span className='ml-3 react font-semibold'>React Native</span>
+                            ) : null}
+                            {slide === '/tech/spring-logo.svg' ? (
+                                <span className='ml-3 spring-boot font-semibold'>Spring Boot</span>
                             ) : null}
                         </div>
                     ))}
