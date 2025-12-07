@@ -1,0 +1,42 @@
+.project-overview {
+    min-height: 100vh;
+    margin: auto;
+    padding: 50px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    color: #030391;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pic-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+
+    .pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

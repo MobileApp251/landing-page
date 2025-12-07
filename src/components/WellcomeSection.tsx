@@ -17,7 +17,7 @@ export default function WellcomeSection() {
     }, []);
 
     return (
-        <div className="surface-0 flex justify-content-center">
+        <div className="bg-white flex justify-center w-full">
             <div id="home" className="landing-wrapper overflow-hidden flex flex-column min-h-screen">
                 <div className="py-3 px-4 flex align-items-center relative  w-screen justify-content-between">
                     <div className='flex align-items-center justify-content-center font-semibold gap-2' data-aos="fade-right">

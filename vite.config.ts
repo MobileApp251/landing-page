@@ -9,7 +9,6 @@ export default defineConfig({
       "primereact/resources/themes/lara-light-blue/theme.css",
       "primereact/resources/primereact.min.css",
       "primeicons/primeicons.css",
-      "primeflex/primeflex.css"
     ]
   }
 })
