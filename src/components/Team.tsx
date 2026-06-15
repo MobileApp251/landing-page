@@ -10,6 +10,7 @@ const links = [
     { icon: '/tech/figma-logo.svg', url: 'https://www.figma.com/design/tmIHtM4PJhKNQHWMUJYRC9/CloneJira?node-id=0-1&t=WDmMmYDpDHRsputP-1' },
     { icon: '/tech/behance-logo.svg', url: 'https://www.behance.net/gallery/239039487/CloneJira' },
     { icon: '/tech/github-logo.svg', url: 'https://github.com/MobileApp251/wiki/wiki' },
+    { icon: '/tech/apk-logo.png', url: 'https://drive.google.com/file/d/1H4VhmiuLUQOfF8oG-XB0GrbclmC_kWU6/view' },
 ];
 
 export default function Team() {
